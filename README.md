@@ -12,8 +12,7 @@ skills.
 
 | Skill | Path | Use when |
 | ----- | ---- | -------- |
-| `wrk3-compat` | `skills/wrk3-compat/SKILL.md` | Read-only check: can this project work with wrk3? Run first. |
-| `wrk3-setup` | `skills/wrk3-setup/SKILL.md` | Author + validate a `wrk3.yaml` (runs compat check as Phase 0). |
+| `wrk3-setup` | `skills/wrk3-setup/SKILL.md` | Check compatibility, propose fixes if incompatible, then author + validate a `wrk3.yaml`. |
 
 ## Usage with agents
 
@@ -21,12 +20,11 @@ Copy or symlink the skill dir your agent loads, e.g.:
 
 ```bash
 # Claude / Codex style (example — adapt to your agent)
-cp -r skills/wrk3-compat ~/.agents/skills/
 cp -r skills/wrk3-setup ~/.agents/skills/
 ```
 
 Or point your agent at this repo and reference
-`skills/wrk3-compat/SKILL.md` / `skills/wrk3-setup/SKILL.md` directly.
+`skills/wrk3-setup/SKILL.md` directly.
 
 ## Versioning
 
