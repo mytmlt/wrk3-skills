@@ -1,0 +1,11 @@
+# Binaries / editor noise
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Never commit trial configs or runtime state
+wrk3.*.local.yaml
+.wrk3-state.json
+.worktrees/
+.env
