@@ -8,6 +8,8 @@ This repo was extracted from `wrk3/skills/` so skill updates ship
 independently of the CLI. The `wrk3` repo points here instead of vendoring
 skills.
 
+Requires `wrk3` CLI v0.1.0+ (see [mytmlt/wrk3](https://github.com/mytmlt/wrk3)).
+
 ## Skills
 
 | Skill | Path | Use when |
@@ -35,3 +37,13 @@ changes bump the table below.
 | skills release | tested wrk3 |
 | -------------- | ----------- |
 | 0.1.0 | `wrk3 v0.1.0` |
+
+## Contributing
+
+Issues and PRs welcome. Keep skill changes minimal and cite the
+`wrk3` CLI behavior they depend on. Update the version table above
+when testing against a new CLI release.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
